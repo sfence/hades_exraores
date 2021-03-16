@@ -10,6 +10,13 @@ minetest.register_node("hades_extraores:stone_with_bauxite", {
  drop = 'hades_extraores:bauxite_lump',
  sounds = hades_sounds.node_sound_stone_defaults(),
 })
+minetest.register_node("hades_extraores:aluminium_block", {
+ description = S("Aluminium Block"),
+ tiles = {"extraores_aluminium_block.png"},
+ is_ground_content = false,
+ groups = {cracky=1,metal=1},
+ sounds = hades_sounds.node_sound_heavy_metal_defaults(),
+})
 
 -- Nickel (-15k)
 
@@ -20,6 +27,13 @@ minetest.register_node("hades_extraores:stone_with_garnierite", {
  groups = {cracky=3, porous=1, ore=1},
  drop = 'hades_extraores:garnierite_lump',
  sounds = hades_sounds.node_sound_stone_defaults(),
+})
+minetest.register_node("hades_extraores:nickel_block", {
+ description = S("Nickel Block"),
+ tiles = {"extraores_nickel_block.png"},
+ is_ground_content = false,
+ groups = {cracky=1,metal=1},
+ sounds = hades_sounds.node_sound_heavy_metal_defaults(),
 })
 
 -- Titanium (-20k)
@@ -32,6 +46,13 @@ minetest.register_node("hades_extraores:stone_with_rulite", {
  drop = 'hades_extraores:rulite_lump',
  sounds = hades_sounds.node_sound_stone_defaults(),
 })
+minetest.register_node("hades_extraores:titanium_block", {
+ description = S("Titanium Block"),
+ tiles = {"extraores_titanium_block.png"},
+ is_ground_content = false,
+ groups = {cracky=1,metal=1},
+ sounds = hades_sounds.node_sound_heavy_metal_defaults(),
+})
 
 -- Tungsten (-25k)
 
@@ -42,6 +63,13 @@ minetest.register_node("hades_extraores:stone_with_wolframite", {
  groups = {cracky=3, porous=1, ore=1},
  drop = 'hades_extraores:wolframite_lump',
  sounds = hades_sounds.node_sound_stone_defaults(),
+})
+minetest.register_node("hades_extraores:tungsten_block", {
+ description = S("Tungsten Block"),
+ tiles = {"extraores_tungsten_block.png"},
+ is_ground_content = false,
+ groups = {cracky=1,metal=1},
+ sounds = hades_sounds.node_sound_heavy_metal_defaults(),
 })
 
 -- Lithium (-30k)
@@ -54,6 +82,13 @@ minetest.register_node("hades_extraores:stone_with_spodumene", {
  drop = 'hades_extraores:spodumene_lump',
  sounds = hades_sounds.node_sound_stone_defaults(),
 })
+minetest.register_node("hades_extraores:lithium_block", {
+ description = S("Lithium Block"),
+ tiles = {"extraores_lithium_block.png"},
+ is_ground_content = false,
+ groups = {cracky=1,metal=1},
+ sounds = hades_sounds.node_sound_heavy_metal_defaults(),
+})
 
 -- Platinum
 
@@ -65,15 +100,29 @@ minetest.register_node("hades_extraores:stone_with_platinum", {
  drop = 'hades_extraores:platinum_lump',
  sounds = hades_sounds.node_sound_stone_defaults(),
 })
+minetest.register_node("hades_extraores:platinum_block", {
+ description = S("Platinum Block"),
+ tiles = {"extraores_platinum_block.png"},
+ is_ground_content = false,
+ groups = {cracky=1,metal=1},
+ sounds = hades_sounds.node_sound_heavy_metal_defaults(),
+})
 
 -- Halite
 
 minetest.register_node("hades_extraores:halite", {
  description = S("Halite"),
- tiles = {"extraores_mineral_halite.png"},
+ tiles = {"default_stone.png^extraores_mineral_halite.png"},
  is_ground_content = true,
  groups = {cracky=2, porous=1, ore=1},
- drop = 'hades_extraores:halite',
+ drop = 'hades_extraores:halite_lump 9',
+ sounds = hades_sounds.node_sound_stone_defaults(),
+})
+minetest.register_node("hades_extraores:halite_block", {
+ description = S("Halite Block"),
+ tiles = {"extraores_halite_block.png"},
+ is_ground_content = false,
+ groups = {cracky=1},
  sounds = hades_sounds.node_sound_stone_defaults(),
 })
 
@@ -87,7 +136,7 @@ minetest.register_node("hades_extraores:stone_with_silver", {
  drop = 'hades_extraores:silver_lump',
  sounds = hades_sounds.node_sound_stone_defaults(),
 })
-minetest.register_node("hades_extraores:silverblock", {
+minetest.register_node("hades_extraores:silver_block", {
  description = S("Silver Block"),
  tiles = {"extraores_silver_block.png"},
  is_ground_content = false,

@@ -61,6 +61,10 @@ minetest.register_craftitem("hades_extraores:platinum_ingot", {
 })
 
 -- Halite
+minetest.register_craftitem("hades_extraores:halite_lump", {
+ description = S("Halite Lump"),
+ inventory_image = "extraores_halite_lump.png",
+})
 
 -- Silver
 minetest.register_craftitem("hades_extraores:silver_lump", {
