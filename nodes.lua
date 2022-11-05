@@ -1,6 +1,6 @@
 local S = minetest.get_translator("extraores")
 
--- Aluminium (-10k)
+-- Aluminum (-10k)
 
 minetest.register_node("hades_extraores:stone_with_bauxite", {
  description = S("Bauxite Ore"),
@@ -10,9 +10,9 @@ minetest.register_node("hades_extraores:stone_with_bauxite", {
  drop = 'hades_extraores:bauxite_lump',
  sounds = hades_sounds.node_sound_stone_defaults(),
 })
-minetest.register_node("hades_extraores:aluminium_block", {
- description = S("Aluminium Block"),
- tiles = {"extraores_aluminium_block.png"},
+minetest.register_node("hades_extraores:aluminum_block", {
+ description = S("Aluminum Block"),
+ tiles = {"extraores_aluminum_block.png"},
  is_ground_content = false,
  groups = {cracky=1,metal=1},
  sounds = hades_sounds.node_sound_heavy_metal_defaults(),
